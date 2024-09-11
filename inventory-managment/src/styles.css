@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+    font-size: 1.25rem;
+    background-color: #008480;
+    color: #fff;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 99vh;
+}
+
+
+div{
+    margin: .18rem 0;
+    width: 100%
+}
+
+input, select{
+    padding: 0.5rem;
+    margin: .25rem 0;
+    border: #005e5a 5px solid;
+    background-color: #00a59fa6;
+    border-radius: 5px;
+    width: 100%
+}
+
+.add-btn{
+    padding: 0.5rem;
+    margin: 2rem 0;
+    border: #005e5a 5px solid;
+    background-color: #005e5a;
+    border-radius: 5px;
+    color: #fff;
+    width: 100%
+} 
+
+a{
+    text-decoration: none;
+    color: #fff;
+    text-decoration: underline;
+    background-color: transparent;
+}
+
+.index-btn{
+    padding: .5rem;
+    background-color: #005e5a;
+    border-radius: 15px;
+    color: #fff;
+    width: 50%;
+    margin: 2.75rem 0;
+    border: none;
+    height: fit-content;
+}
+
+.index-btn a{
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+form{
+    margin-top: 2rem;
+}
+
+.report, th, td{
+    border: 2px solid #004744;
+    border-collapse: collapse;
+    padding: 3px;
+}
+
+.report td{
+    text-align: center;
+    width: 25vw;
+}
+
+.report{
+    margin: 2rem 1rem;
+}
+
+.location-stock{
+    border: 2px solid #004744;
+    border-collapse: collapse;
+    padding: 3px;
+    margin: 2rem 1rem;
+}
+
+.location-stock td{
+    text-align: center;
+    width: 20vw;
+}
+
+h1{
+    margin: 1rem 1rem;
+    font-size: 2rem;
+    text-decoration: underline;
+    text-align: center;
+}
