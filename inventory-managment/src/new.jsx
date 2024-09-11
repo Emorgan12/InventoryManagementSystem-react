@@ -1,6 +1,7 @@
 import React from "react";
 import reactDOM from "react-dom";
 import { useState } from "react";
+import BASE_URL from "../main";
 
 function CreateItem() {
     const [name, setName] = useState('')
@@ -13,7 +14,7 @@ function CreateItem() {
 
     const handleCreation = (e) => {
         e.preventDefault();
-        fetch('https://127.0.0.1:5001/inventory', {
+        fetch(BASE_URL, {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
