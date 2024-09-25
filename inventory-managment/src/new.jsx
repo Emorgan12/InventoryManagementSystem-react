@@ -29,7 +29,7 @@ function CreateItem() {
             })
             .then((data) => {
               console.log('Success:', data);
-              alert('Contact added successfully');
+              alert('Item Created successfully');
             })
             .catch((error) => {
               console.error('Error:', error);
