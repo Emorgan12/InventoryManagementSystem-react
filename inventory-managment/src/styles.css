@@ -75,8 +75,8 @@ form{
     margin-top: 2rem;
 }
 
-.report, th, td{
-    border: 2px solid #004744;
+.report th, .report td, .inventory th, .inventory td {
+    border: 2px solid #ffffff;
     border-collapse: collapse;
     padding: 3px;
 }
@@ -90,21 +90,59 @@ form{
     margin: 2rem 1rem;
 }
 
-.location-stock{
-    border: 2px solid #004744;
-    border-collapse: collapse;
-    padding: 3px;
-    margin: 2rem 1rem;
-}
-
-.location-stock td{
-    text-align: center;
-    width: 20vw;
-}
-
 h1{
     margin: 1rem 1rem;
     font-size: 2rem;
     text-decoration: underline;
     text-align: center;
+}
+
+.editTable thead, tr {
+    border: 2px solid #ffffff;
+    padding: 3px;
+}
+
+.editTable td, th {
+    border: 2px solid #ffffff;
+    padding: 3px;
+    text-align: center;
+    
+}
+
+.editTable {
+    margin: 2rem 1rem;
+}
+
+.edit-btn {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 0 1rem;
+}
+
+.edit-btn button {
+    background-color: #005e5a;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    height: fit-content;
+    margin: 0 .25rem;
+    
+}
+.edit-btn button:hover {
+    background-color: #004744;
+}
+
+.buy-sell-btn {
+    margin-bottom: .5rem;
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #01645f;
+}
+
+.buy-sell-btn:hover {
+    background-color: #004744;
 }

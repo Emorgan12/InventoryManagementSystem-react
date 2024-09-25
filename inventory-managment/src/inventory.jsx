@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
+import BASE_URL from "../main";
 
 console.log('Inventory component mounted');
 function Inventory() {
@@ -28,17 +29,39 @@ function Inventory() {
     }, []);
 
     return (
-        <div>
+        <div className="container">
             {error && <p className="error">{error}</p>}
-            <ul>
+            <table className="inventory">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Category</th>
+                        <th>Cost Price</th>
+                        <th>Selling Price</th>
+                        <th>Quantity</th>
+                    </tr>
+                </thead>
+                <tbody>
                 {products.length > 0 ? (
                     products.map((product) => (
-                        <li key={product.id}>{product.name}</li>
+                        <tr key={product.id}>
+                            <td>{product.id}</td>
+                            <td>{product.name}</td>
+                            <td>{product.category}</td>
+                            <td>{product.cost_price}</td>
+                            <td>{product.selling_price}</td>
+                            <td>{product.quantity}</td>
+                        </tr>
                     ))
                 ) : (
-                    <p>No products available</p>
+                    <tr>
+                        <td colspan="6">No products available</td>
+                    </tr>
                 )}
-            </ul>
+                </tbody>
+            </table>
+            <a href="index.html">Home</a>
         </div>
     );
 }

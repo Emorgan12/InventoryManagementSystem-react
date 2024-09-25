@@ -67,6 +67,7 @@ function CreateItem() {
                 <button className="add-btn">Create Item</button>
                 {error && <p className="error">{error}</p>}
             </form>
+            <a href="index.html">Home</a>
         </div>
     )
 }
