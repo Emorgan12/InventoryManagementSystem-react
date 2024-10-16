@@ -1,0 +1,128 @@
+# .NET Core
+bin/
+obj/
+out/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Auto-generated files
+*.log
+*.tlog
+*.vspscc
+*.vssscc
+
+# Build results
+*.dll
+*.exe
+*.app
+*.so
+*.dylib
+*.pdb
+*.cache
+*.ilk
+*.log
+*.lib
+*.nupkg
+*.snupkg
+*.symbols.nupkg
+*.props
+*.targets
+
+# Visual Studio Code
+.vscode/
+
+# Rider
+.idea/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Entity Framework
+Migrations/
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code directories
+.vscode/
+.history/
+
+# Local history for Visual Studio
+.vs/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# Dotnet user secrets
+secrets.json
+
+# StyleCop
+StyleCopReport.xml
+
+# NCrunch
+_NCrunch_*
+.*crunch*.local.xml
+
+# Coverlet
+coverage*.json
+coverage*.xml
+coverage*.info
+
+# Code coverage results
+coverage/
+*.coverage
+*.coveragexml
+
+# Resharper
+_ReSharper.Caches/
+
+# DotCover
+*.dotCover
+
+# TeamCity
+_TeamCity/
+
+# DotTrace
+*.dotTrace
+
+# DotMemory
+*.dotMemory
+
+# DotPeek
+*.dotPeek
+
+# Local history for Visual Studio
+.vs/
+
+.sqlite.db

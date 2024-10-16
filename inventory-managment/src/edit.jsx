@@ -30,7 +30,7 @@ function EditItem() {
     
     const handleSearch = (e) => {
         e.preventDefault();
-        fetch(BASE_URL + `/${searchValue}` + '/search')
+        fetch(`${BASE_URL}?name=${encodeURIComponent(searchValue)}`)
         .then((response) => response.json())
         .then((data) => setProducts(data))
         .catch((error) => {

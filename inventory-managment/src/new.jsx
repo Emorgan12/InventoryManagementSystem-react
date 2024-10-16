@@ -14,12 +14,8 @@ function CreateItem() {
 
     const handleCreation = (e) => {
         e.preventDefault();
-        fetch(BASE_URL, {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({"name": name, "category": category, "cost_price": cost, "selling_price": price, "quantity": purchased}),
+        fetch(`${BASE_URL}/${encodeURIComponent(name)}, ${encodeURIComponent(category)}, ${encodeURIComponent(cost)}, ${encodeURIComponent(price)}, ${encodeURIComponent(purchased)}`, {
+            method: 'POST'
           })
             .then((response) => {
               if (!response.ok) {
